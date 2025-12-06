@@ -93,3 +93,8 @@
 //     console.log("hii")
 // }
 // <Hero/>
+
+
+"--------------------folder structure of react js-------------------"
+"making folder with vite is in folder named code part begins here
+"
