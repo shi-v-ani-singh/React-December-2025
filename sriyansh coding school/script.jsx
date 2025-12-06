@@ -95,6 +95,22 @@
 // <Hero/>
 
 
-"--------------------folder structure of react js-------------------"
-"making folder with vite is in folder named code part begins here
-"
+"--------------------folder structure of react js using [vite]-------------------"
+"vite- is a bundler (that helps in making folders)"
+
+"---Vite is basically a super-fast build tool and bundler that sets up your React project instantly. It creates the folder structure for you and handles things like dev server, hot reload, and bundling."
+
+"Earlier, people used create-react-app (CRA) to make React projects. But the team behind it has officially stopped maintaining it, and they’ve suggested moving to frameworks like Next.js or Remix because React itself is only a library — it doesn’t include a full architecture or advanced tooling."
+
+"For learning React basics though, using Vite is perfectly fine. It’s fast, lightweight, and very beginner-friendly.---"
+
+
+
+
+"note- making folder with vite is in folder named code part begins here"
+
+
+// npm create vite
+// react
+// js
+
