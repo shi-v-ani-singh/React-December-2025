@@ -69,5 +69,27 @@
 
 
 
-"-----------------------------JSX-> JavaScript XML(HTML + JS)------------------------"
+"-----------------------------JSX-> JavaScript XML (HTML + JS)------------------------"
+"--JSX is a syntax extension for JavaScript that looks similar to HTML and is used in React to describe the UI structure--"
+"--we can write HTML elements in JavaScript and place them in the DOM without using functions like createElement() or appendChild()--"
+"---Babel is used to convert JSX code into regular JavaScript code that browsers can understand--"
 
+// example ---> var h1 = <h1>hwllo world</h1>
+
+"-----in js --"
+// function abc(){
+//     console.log('hello');
+// }
+// abc();
+
+"---but in jsx--"
+// function abc(){
+//     console.log('hello');
+// }
+// <abc />
+
+"----------------how to write functions in capital letters in jsx----"
+// function Hero(){
+//     console.log("hii")
+// }
+// <Hero/>
