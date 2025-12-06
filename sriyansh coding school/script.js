@@ -43,11 +43,31 @@
 
 "--------------------------------------"
 
-import naam from './app.js'
-import user2 from './test.js'
+// import naam from './app.js'
+// import user2 from './test.js'
 
-import {age, skills} from './app.js'
-console.log(age, skills)
+// import {age, skills} from './app.js'
+// console.log(age, skills)  
 
-console.log(naam, user2)
+// console.log(naam, user2)
+
+"-------------------------------------------"
+
+"-------------------------------------------"
+
+"--------------Real DOM and Virtual DOM-------------------"
+
+// Real DOM- Document Object Model
+"---THE WHOLE DOM will be rerendered that is refreshed when we make changes in real DOM for changing a single element--"
+"-----and this makes the performance slow----"
+"--example like if we have 1000 elements in a webpage and we change only one element then the whole DOM will be refreshed--"
+
+// Virtual DOM- is a lightweight copy of the real DOM that is kept in memory and synced with the real DOM by libraries such as ReactJS.
+"---ONLY THE CHANGED ELEMENT is updated in the real DOM instead of refreshing the whole DOM--"
+"-----and this makes the performance faster and efficient----"
+"--example like if we have 1000 elements in a webpage and we change only one element then only that element will be updated--"
+
+
+
+"-----------------------------JSX-> JavaScript XML(HTML + JS)------------------------"
 
