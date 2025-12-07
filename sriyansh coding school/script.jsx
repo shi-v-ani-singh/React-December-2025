@@ -172,3 +172,41 @@
 
 "components are reusable pieces of code that represent a part of the user interface in a React application. They help in breaking down the UI into smaller, manageable, and reusable pieces, making it easier to build and maintain complex applications."
 "Each component is a JavaScript function or class that returns a React element, which describes what should be rendered on the screen. Components can accept inputs called 'props' and manage their own state to create dynamic and interactive UIs.---"
+
+
+// " --------------> print variables in jsx using {} curly braces "
+
+"------------------Multiple Components in React-------------------"
+
+// "---------------03-props -> props dealing -----------------"
+
+"Props (short for properties) are a way to pass data from a parent component to a child component in React. They allow you to customize and configure components by providing them with specific values or information."
+
+// ----- passing props from parent to child component ----- or use props for changing data or passng data
+
+// always parent to child data transfer is possible not vice versa
+
+//  APP -> CARD -> IMGAGE  DATA flow for passing props
+// whole data will be concentrated/kept  in app.jsx then we'll pass it to its childrens/ can be multiple childrens
+
+"------------------in js-------------"
+// function abc(a){
+//     console.log('hello',a);
+// }
+// abc(10)
+
+"-------------in jsx------------"
+"in cards.jsx"
+function card (a) {
+  return
+     <div className="card">
+      <img src="https://images.unsplash.com/photo-1639542270103-0e94fc28be38?q=80&w=816&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+      <h1>Shivani Singh</h1>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+      <button>View Profile</button>
+    </div>
+  
+}
+
+"in app.jsx"
+// card() as card(a)
