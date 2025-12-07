@@ -113,4 +113,33 @@
 // npm create vite
 // react
 // js
+"---------------------------------------------"
 
+
+// App.jsx->
+"-------------------rafce snippet for react functional component------------------"
+"------App.jsx parent folder is main.jsx file which is in src folder which is in root folder------"
+
+"---index.jsx is having the root div which is accesesed in main.jsx file and it has rendered the appcomponent from App.jsx file---"
+"---so the flow is index.jsx -> main.jsx -> App.jsx---"
+"---index.css is imported in main.jsx file for styling---"
+
+
+"-- ------------------------------------------------------"
+//   we can only return one thing so we wrap multiple things in a div
+// so we use fragments instead of multiple div tags.
+
+
+
+"-------NOTE:->--------------use only npm install vite instead of vite@latest because in latest version there aremany errors "
+
+"ASSETS:-> images,fonts,svgs etc placed in the assets folder inside src folder"
+
+"PUBLIC FOLDER:-> contains index.html file and other static files that are directly served without processing by Vite."
+
+"NODE MODULES:-> contains all the project dependencies and packages installed via npm."
+
+"------------------------eslint-------------------"
+"ESLint is a tool that helps identify and fix problems in your JavaScript code to ensure it follows best practices and coding standards."
+"----eslint.config.js = The NEW hotness----"
+"----eslintrc.cjs = The OLD, classic setup-----"

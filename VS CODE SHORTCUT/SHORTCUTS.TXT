@@ -1,0 +1,5 @@
+1. "Ctrl + Shift + P" -> a big search bar pops up where you can run any VS Code action instantly. 
+
+    - Snooze inline suggestion(Set time)
+    - Add a boilder plate/snippet to reuse:
+            ->(example: "Configure User Snippets" then select the respective json file you want to add snippets to)
