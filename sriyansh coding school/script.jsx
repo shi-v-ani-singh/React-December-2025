@@ -327,4 +327,77 @@ function card(a) {
 
 "-------------------------------------------------------------------------------------------------------------"
 
-"----------------------------------------05-css----------------------"
+"----------------------------------------  05-css  ----------------------"
+// instead of writing all css code in index.css or in a seprate folder in src as styles and writing seprate css like btn.css and header.css, we prefer to write seprate css 
+// ------>BEcz if i accidently given same class to both the components then the same style will apply on both the components but we want different style while using same classname 
+
+
+// const App = () => {
+//   return (
+//     <div>
+//       <Button />
+//       <Header />
+//     </div>
+//   )
+// }
+// const Button = () => {
+//   return (
+//     <div>
+//         <button className="btn">This is button.</button>
+//     </div>
+//   )
+// }
+// const Header = () => {
+//   return (
+
+//     <div className='header'>
+//         <p>sheriyansh</p>
+//         <button className='btn'>Login</button>
+//     </div>
+//   )
+// }
+// .header{
+//     background-color: lightseagreen;
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     padding: 10px 20px;
+//     margin: 5px;
+// }
+// .btn{
+//     background-color: red;
+//     width: fit-content;
+//     padding: 10px 20px;
+//     border-radius: 5px;
+//     margin: 5px;
+// }
+
+"------> the btn style is applied on heaer and buttton both files so thats why we use modules."
+
+"----------------module css ----------"
+
+// create seprate folder in componets folder like for btn create btn folder and contain button.jsx and button.module.css same as for othe components 
+
+
+"-----------------------------------------------------------"
+
+"----------------------- tailwind.css ----------------------"
+
+//  https://tailwindcss.com/docs/installation/using-vite
+
+"----------------interminal--------------"
+// npm create vite@latest my-project
+// cd my-project
+
+"----------in terminal--------"
+// npm install tailwindcss @tailwindcss/vite
+
+"---------write in vite.config.js--------"
+// import tailwindcss from '@tailwindcss/vite'
+"-------in vite.config.js -----"
+//  plugins: [
+//     tailwindcss(),
+//   ],
+"---------------in index.css-----------"
+// @import "tailwindcss";
+
