@@ -197,15 +197,15 @@
 
 "-------------in jsx------------"
 "in cards.jsx"
-function card (a) {
+function card(a) {
   return
-     <div className="card">
-      <img src="https://images.unsplash.com/photo-1639542270103-0e94fc28be38?q=80&w=816&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
-      <h1>Shivani Singh</h1>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-      <button>View Profile</button>
-    </div>
-  
+  <div className="card">
+    <img src="https://images.unsplash.com/photo-1639542270103-0e94fc28be38?q=80&w=816&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+    <h1>Shivani Singh</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+    <button>View Profile</button>
+  </div>
+
 }
 
 "in app.jsx"
@@ -288,5 +288,43 @@ function card (a) {
 // output -> 20406080
 
 "----------map() is basically for writing/showing"
+
 "---------- forEach() is basically for itration"
 "-------------------------Array of objects------------------------------"
+// const arr = [{user:'shivani'},{user:'sakshi'}];
+// arr.forEach(function (elm) {
+//   console.log(elm.user)
+// })
+
+// output-> shivani
+//       -> sakshi
+
+"-------------------------error key props missing -----------"
+'----------------error: Each child in a list should have a unique "key" prop.'
+
+
+// React recognizes all cards as same in "04-cards-project" so we have to pass a hey to recognize them as unique.
+"-------------KEY IS BASICALLY A ID---"
+// const App = () => {
+//   return (
+//     <div className="parent">
+//       {jobs.map(function (elem, idx) {
+//         console.log(idx);
+
+//         return <Card key={idx} brandLogo={elem.brandLogo} company={elem.company} datePosted={elem.datePosted} post={elem.post} tag1={elem.tag1} tag2={elem.tag2} pay={elem.pay} location={elem.location}/>
+//       }
+//       )}
+
+//     </div>
+//   )
+// }
+
+"--------------but this is preffered ->--"
+// return <div key={idx}>
+//           <Card brandLogo={elem.brandLogo} company={elem.company} datePosted={elem.datePosted} post={elem.post} tag1={elem.tag1} tag2={elem.tag2} pay={elem.pay} location={elem.location}/>
+   
+//         </div>
+
+"-------------------------------------------------------------------------------------------------------------"
+
+"----------------------------------------05-css----------------------"

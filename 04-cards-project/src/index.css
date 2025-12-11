@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'helvetica neue';
-  color: white;
+  /* color: white; */
 }
 
 html,
@@ -13,9 +13,13 @@ body {
 }
 
 .parent{
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background-color: #111;
+  padding: 30px;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
 }
 
 .card{
@@ -51,7 +55,7 @@ body {
   font-size: 10px;
   border-radius: 5px;
   background-color: transparent;
-  color: #b1b1b1;
+    color: #8b8b8b;
 
 }
 
