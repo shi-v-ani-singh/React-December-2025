@@ -1,20 +1,18 @@
 import React from 'react'
+// import Card from './components/Card'
+import User from './components/User'
+
+
+const arr = [10, 20, 30];
+arr.forEach(function (elm) {
+  console.log(elm)
+})
 
 const App = () => {
   return (
     <div className="parent">
-      <div className="card">
-        <div className="top">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa9Mdeo4S4YXDOaI4Xm53DaaHVlccVG_j7Yg&s" alt="" />
-          <button>Save <Bookmark /></button>
-        </div>
-        <div className="center">
-          <h1>kjhj</h1>
-        </div>
-        <div className="bottom">
+      {/* <Card /> */}
 
-        </div>
-      </div>
     </div>
   )
 }

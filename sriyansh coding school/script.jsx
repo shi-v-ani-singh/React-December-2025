@@ -210,3 +210,83 @@ function card (a) {
 
 "in app.jsx"
 // card() as card(a)
+
+
+// -------------------------------- 04-cards-project ----------------
+
+// made a card component 
+
+// <---------------------how to pass props as an array--------------->
+// import User from './components/User'
+
+
+// const arr = [10,20,30,40]
+
+// const App = () => {
+//   return (
+//     <div className="parent">
+//       {/* <Card /> */}
+//       <User name='Shivani' />
+//       <User name={arr[2]}/>
+//       <User name='Sarthak' />
+//       <User name='Harsh' />
+//     </div>
+//   )
+// }
+
+// export default App
+
+"-------so there is a problem instead of passing like this we will use array method map() to pass props dynamically--------"
+
+"------------------------------------------------arr.map() method--------------------------------------"
+
+
+// const arr = [10,20,30,40]
+
+// const App = () => {
+//   return (
+//     <div className="parent">
+//       {/* <Card /> */}
+//       {arr.map(function(){
+//         return 'hello'
+//       })}
+//     </div>
+//   )
+// }
+
+//------------ output->>hellohellohellohello
+
+"--------------------------------------"
+// const arr = [10,20,30,40]
+
+// const App = () => {
+//   return (
+//     <div className="parent">
+//       {/* <Card /> */}
+//       {arr.map(function(ele){
+//         return ele
+//       })}
+//     </div>
+//   )
+// }
+
+// output-> 10203040
+"---------------------------"
+// const arr = [10,20,30,40]
+
+// const App = () => {
+//   return (
+//     <div className="parent">
+//       {/* <Card /> */}
+//       {arr.map(function(ele){
+//         return <h1>{ele*2}</h1>
+//       })}
+//     </div>
+//   )
+// }
+
+// output -> 20406080
+
+"----------map() is basically for writing/showing"
+"---------- forEach() is basically for itration"
+"-------------------------Array of objects------------------------------"
