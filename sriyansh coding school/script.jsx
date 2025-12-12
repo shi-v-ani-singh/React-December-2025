@@ -401,3 +401,10 @@ function card(a) {
 "---------------in index.css-----------"
 // @import "tailwindcss";
 
+"------------------------------------------------------------------------------"
+
+"---------------------Feature-based vs Atomic Design folder structures---------------"
+// If your app is feature-driven (Dashboard / Profile / Cart) → go Feature-Based.
+// If your app is component-driven (lots of reusable UI) → go Atomic Design.
+
+// Many companies actually mix both when things grow.
