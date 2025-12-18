@@ -381,7 +381,7 @@ function card(a) {
 
 "-----------------------------------------------------------"
 
-"----------------------- tailwind.css ----------------------"
+"----------------------- 06-tailwind.css ----------------------"
 
 //  https://tailwindcss.com/docs/installation/using-vite
 
@@ -408,3 +408,16 @@ function card(a) {
 // If your app is component-driven (lots of reusable UI) → go Atomic Design.
 
 // Many companies actually mix both when things grow.
+
+"------------------------07-ui-project-------------------"
+// created a ui project with tailwind css
+
+"---------------creeted the ui using react and tailwind css------------------"
+// simple ui with navbar and two sections 
+// props used to pass data from app.jsx to section1.jsx to page1content.jsx to rightcontent.jsx
+// for now we have used basic props passing method but later we will use context api for better data passing
+
+"----------now we are adding animation to remove the scrollbar in right content section using this in index.css->----------"
+// #right::-webkit-scrollbar{
+//     display: none;
+// }
