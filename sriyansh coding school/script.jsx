@@ -421,3 +421,49 @@ function card(a) {
 // #right::-webkit-scrollbar{
 //     display: none;
 // }
+
+"---------for passing style through css u just have to use a style attributr and write as- style={{key:value}} and the color passed as other props passes through their parent--------"
+
+
+
+
+"-----------------------------------------------------------------------------------------------------------------"
+
+"--------------------------------08-functions----------------------"
+
+"----------------in js we use--------"
+// var a = document.querySelector('h1');
+
+// a.addEventListener('click',function(){
+//   console.log('hello');
+// })
+
+
+"----------or--------"
+// var a = document.querySelector('h1');
+// function hero(){
+//   console.log('hello');
+// }
+// a.addEventListener('click',hero);
+
+
+"-----in raect js we use--------"
+
+"----note:- we write onclick={btnClicked} but not as onclick={btnClicked()} in react js because if we write with () then the function will be called immediately when the component renders, rather than when the button is actually clicked.--"
+"-----------also when we use () then in consol we get btnis clicked without even clicking on te btn because the function is invoked right away during the rendering process. This means that the function runs as soon as the component is rendered, not when the button is clicked. So, to ensure that the function only runs when the button is clicked, we pass the function reference without parentheses (btnClicked) to the onClick event handler. This way, the function is called only in response to the click event."
+
+//   function btnClicked(){
+//     console.log('Btn is clicked')
+//   }
+//   return (
+//     <div>
+//       <h1>Hello, Shivani</h1>
+//       <button onClick={btnClicked}>Change user</button>
+//     </div>
+//   )
+// }
+
+// we can also reuse the function for other buttons or events like onDoubleClick,onMouseEnter etc
+
+"------or you can also pass function within the event handler directly as an anonymous function like this: ---"
+// onClick={() => console.log('Btn is clicked')}
