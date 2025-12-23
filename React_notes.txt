@@ -1,0 +1,265 @@
+// var h1 = document.createElement('h1');
+// h1.innerHTML = "Hello from JS.";
+// document.body.appendChild(h1);
+// console.log(h1);
+
+"-----------------------------"
+
+"LIBRARY:-----------"
+//                  - GSAP
+//                  - REACT JS
+
+"FRAMEWORKS:------------------------"
+//                   - NEXT JS 
+//                   - ANGULAR JS
+
+// Library = specific functionality (UI, animation etc)
+// Framework = full structure + rules + tooling
+
+"----------------------------------------"
+"-----------IMPORT AND EXPORTS-----------------"
+
+// default export
+// export default user
+// import user from './app.js'
+
+// named export
+// export const arr = []
+// import { arr } from './app.js'
+
+// ❌ this will not work if arr is not default
+// import array from './app.js'
+
+// ✔ correct
+// import { arr } from './app.js'
+
+// multiple named imports
+// import { age, skills } from './app.js'
+
+// rename default import (allowed)
+// import naam from './app.js'
+
+"-------------------------------------------"
+
+"--------------Real DOM and Virtual DOM-------------------"
+
+// Real DOM
+// when we change a single element, the whole DOM tree re-renders
+// this makes performance slow
+
+// example:
+// 1000 elements → change 1 → all 1000 re-render
+
+// Virtual DOM
+// lightweight copy of real DOM stored in memory
+// React compares (diffing) old vs new Virtual DOM
+// ONLY the changed element updates in Real DOM
+
+// example:
+// 1000 elements → change 1 → only that element updates
+
+"-----------------------------JSX------------------------"
+// JSX = JavaScript XML (HTML + JS)
+// used in React to describe UI
+
+// Babel converts JSX → normal JS
+// so browser can understand it
+
+// example
+// const h1 = <h1>Hello World</h1>
+
+"-----normal js-----"
+// function abc(){
+//   console.log('hello');
+// }
+// abc();
+
+"-----jsx-----"
+// function Abc(){
+//   return <h1>Hello</h1>
+// }
+// <Abc />
+
+// ⚠ component name MUST start with capital letter
+
+"--------------------React Components--------------------"
+
+// function Hero(){
+//   console.log("hi")
+// }
+// <Hero />
+
+"--------------------VITE-------------------"
+// Vite = fast bundler + dev server
+// creates folder structure
+// hot reload, fast build
+
+// CRA is deprecated
+// For learning React → Vite is perfect
+// For production → Next.js / Remix
+
+// command
+// npm create vite@latest
+
+"---------------------------------------------"
+
+"-------------------App structure------------------"
+
+// index.html → main.jsx → App.jsx
+// index.css imported in main.jsx
+
+// Only ONE thing can be returned
+// use fragment <> </> instead of extra divs
+
+"-------------------Folders-------------------"
+
+// src/
+// components/
+// assets/ (images, fonts, svgs)
+// public/ (static files)
+// node_modules/
+
+"-------------------ESLint-------------------"
+// eslint.config.js → new
+// .eslintrc.cjs → old
+
+"-------------------.gitignore-------------------"
+// files that git should ignore
+
+"-------------------.env-------------------"
+// environment variables
+
+"-------------------package files-------------------"
+// package.json → metadata + scripts
+// package-lock.json → exact dependency versions
+
+"-------------------vite.config.js-------------------"
+// vite configuration
+
+"-------------------README.md-------------------"
+// project documentation
+
+"-------------------------------------------"
+
+"-------------------COMPONENTS-------------------"
+
+// reusable UI blocks
+// each component returns JSX
+// props = data passed from parent to child
+
+// data flow is ONE WAY
+// parent → child
+
+"-------------------PROPS-------------------"
+
+// in js
+// function abc(a){
+//   console.log(a);
+// }
+
+// in react
+// function Card(props){
+//   console.log(props.name);
+// }
+
+// destructuring (preferred)
+// function Card({ name }){}
+
+// ❌ WRONG (return on new line)
+// return
+// <div></div>
+
+// ✔ CORRECT
+function Card({ name }) {
+  return (
+    <div className="card">
+      <h1>{name}</h1>
+    </div>
+  )
+}
+
+"-------------------MAP-------------------"
+
+// map = rendering JSX
+// forEach = iteration only
+
+const arr = [10,20,30,40]
+
+// {arr.map(function(ele){
+//   return <h1>{ele * 2}</h1>
+// })}
+
+"-------------------Array of Objects-------------------"
+
+// const users = [{user:'shivani'},{user:'sakshi'}]
+
+// users.map(function(el){
+//   return <p>{el.user}</p>
+// })
+
+"-------------------KEY-------------------"
+
+// error: Each child should have unique key
+
+// ❌ avoid index if possible
+// ✔ use unique id
+
+// <Card key={user.id} />
+
+"-------------------CSS PROBLEM-------------------"
+
+// same class name = same styling issue
+// solution → CSS MODULES
+
+// Button/
+// Button.jsx
+// Button.module.css
+
+"-------------------TAILWIND-------------------"
+
+// npm create vite@latest
+// npm install tailwindcss @tailwindcss/vite
+
+// vite.config.js
+// plugins: [tailwindcss()]
+
+// index.css
+// @import "tailwindcss";
+
+"-------------------EVENTS-------------------"
+
+// ❌ onClick={btnClicked()}
+// ✔ onClick={btnClicked}
+
+function btnClicked(){
+  console.log("button clicked")
+}
+
+// <button onClick={btnClicked}>Click</button>
+
+// anonymous
+// onClick={() => console.log("clicked")}
+
+"-------------------EVENT OBJECT-------------------"
+
+// onChange={(e)=>{
+//   console.log(e.target.value)
+// }}
+
+"-------------------MOUSE EVENTS-------------------"
+
+// onMouseMove={(e)=>{
+//   console.log(e.pageX, e.pageY)
+// }}
+
+"-------------------HOOKS-------------------"
+
+// Hooks let functional components use:
+// state, lifecycle, refs
+
+// hooks exist because class components were complex
+
+// useState → state management
+// useEffect → side effects
+// useRef → DOM access (instead of querySelector)
+

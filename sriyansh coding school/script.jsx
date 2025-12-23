@@ -488,3 +488,38 @@ function card(a) {
     //     console.log(elem.pageX, elem.pageY);
     //   }} className="h-40 w-80 bg-red-900"></div>
     // </div>
+
+
+    //  <div onWheel={(elem)=>{
+    //   if (elem >0){
+    //     console.log("page is scrolling at positive speed",elem.deltaY)
+    //   }
+    //   console.log("page is scrolling at minus speed",elem.deltaY)
+    // }}>
+    //   <div className="h-screen w-full bg-red-700"></div>
+    //   <div className="h-screen w-full bg-blue-500"></div>
+    //   <div className="h-screen w-full bg-orange-700"></div>
+    // </div>
+
+
+    "----------------------------- Hokks in React js-------------------"
+
+    " why we use hools -> because in react js we cant use state and other features in functional components so we use hooks to use those features in functional components"
+    "----hooks are special functions that let you 'hook into' React features like state and lifecycle methods from functional components.---"
+
+
+    "-----some hooks are-> useState,useEffect,useContext etc----"
+
+    // 1. "------------------useState hook -> " manages/changes state"-------------------"
+    "useState-> is a hook that allows you to add state management to functional components in React. It enables you to create and update state variables, which can be used to store and manage data that affects the component's rendering and behavior."
+   // state1-> HOME and state2-> HOME with underline
+   "example of useState hook->"
+                          //  instagram-> someone mesg you on insta and then the stste chnages to show the mesg notification and also the count of message increases if the person sent you multiple message
+
+// 2. "------------------useEffect hook -> performs side effects"-------------------"
+   "useEffect-> is a hook in React that allows you to perform side effects in functional components."
+  //  Side effects are operations that can affect other parts of the application or interact with external systems, such as fetching data from an API, updating the DOM, setting up subscriptions, or timers."
+
+// 3. "-------------------useRef hook -> access/select any DOM elements-------------------------"
+// in js we use document.querySelector to select any DOM element but in react js we use useRef hook to select any DOM element because we cant use document.querySelector in react js
+" useRef-> is a hook in React that allows you to create a mutable reference that persists across re-renders of a functional component. It provides a way to access and interact with DOM elements or store mutable values without causing re-renders."
