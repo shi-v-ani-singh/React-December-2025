@@ -467,3 +467,24 @@ function card(a) {
 
 "------or you can also pass function within the event handler directly as an anonymous function like this: ---"
 // onClick={() => console.log('Btn is clicked')}
+
+
+
+"-----------some events in react js are-> onChange,onMouseMove,onDoubleClick,onMouseEnter,onMouseLeave etc-----------------"
+
+"---------we get syntahticbaseevent when we pass elem through a event handler function we can get the value of input field using elem.target.value--------"
+
+{/* <input 
+        onChange={function(elem){
+            console.log(elem.target.value);
+
+        }} 
+        type="text" 
+        className="m-10 border border-pink-900 px-15 py-10" 
+        placeholder="Enter Name" 
+      /> */}
+    "----------------when we move the mouse in the red box we get the x and y coordinates of the mouse pointer using elem.pageX and elem.pageY------------------"
+    //   <div onMouseMove={(elem)=>{
+    //     console.log(elem.pageX, elem.pageY);
+    //   }} className="h-40 w-80 bg-red-900"></div>
+    // </div>
