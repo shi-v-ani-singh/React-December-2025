@@ -523,3 +523,100 @@ function card(a) {
 // 3. "-------------------useRef hook -> access/select any DOM elements-------------------------"
 // in js we use document.querySelector to select any DOM element but in react js we use useRef hook to select any DOM element because we cant use document.querySelector in react js
 " useRef-> is a hook in React that allows you to create a mutable reference that persists across re-renders of a functional component. It provides a way to access and interact with DOM elements or store mutable values without causing re-renders."
+
+// 4. "------------------useContext hook -> for passing data globally-------------------"
+
+
+
+"----------------------------------------------------------------------------------------------------------" 
+
+// useState - state ko manage krne ke liye
+
+// useEffect - side effects handle krne ke liye( jaise API call, DOM  manipulation, event listner).
+
+// useContext - global state ko consume krne ke liye without prop drilling.
+
+// useReducer - complex state management ke liye( Redux jaise chhota version).
+
+// useRef - mutable values hold krne ke liye jo re-render trigger na krein, ya DOM access karne ke liye.
+
+// useMemeo $ useCallback - optimization ke liye, unnecessary re-renders avod krne ke liye
+"-------------------------------------------------------------------------------------------------------"
+
+
+"-------------------------------------- 09-useState---------------------------------------"
+"----- we can not directly change the value of a and show the updated value on the screen because react js is not aware of the change in the value of a so we use useState hook to manage the state of a and show the updated value on the screen when we click the button--"
+// const App = () => {
+//   let a = 20;
+//   function changeA(){
+//     console.log(a);
+//     a++;
+//   }
+//   return (
+//     <div>
+//       <h1>Value of a is {a}.</h1>
+//       <button onClick={changeA}>Click</button>
+//     </div>
+//   )
+// }
+
+
+"---------------------------------------------------"
+// const App = () => {
+  
+//   const [num, setNum] = useState('0');
+
+//   return (
+//     <div>
+//       <h1>Value of num is {num}.</h1>
+//       <button onClick={()=>
+//         {
+//           setNum(30);
+//         }
+//       }>Click</button>
+//     </div>
+//   )
+// }
+
+
+"-------------------------------------------------------------------------------------------"
+// const App = () => {
+  
+//   const [num, setNum] = useState('0');
+//   const [userName, setUserName] = useState('Shivani');
+//   const [users, setusers] = useState(['Shivani', 'Sarthak', 'Ankita']);
+
+
+//   return (
+//     <div>
+//       <h1>Value of num is {num} <br />users are {users} <br />Value of username is {userName}</h1>
+//       <button onClick={()=>
+//         {
+//           setNum(30);
+//           setusers([100, 200, 300]);
+//           setUserName('Sarthak');
+//         }
+
+//       }>Click</button>
+//     </div>
+//   )
+// }
+"-------------------------------------------------------------------------------------------"
+  // return (
+  //   <div>
+  //     <h1>{num}</h1>
+  //     <button onClick={()=>{
+  //       setNum(num+1);
+  //     }}>Increase</button>
+  //     <button onClick={()=>{
+  //       setNum(num-1);
+
+  //       // setNum(num--); // Wrong way to decrease the value
+  //     }}>Decrease</button>
+  //     <button onClick={()=>{
+  //       setNum(num+5);
+  //     }}>Jump by 5</button>
+  //   </div>
+  // )
+
+"--------------------------------------------------------------------------------------------"
