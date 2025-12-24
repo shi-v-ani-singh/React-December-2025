@@ -708,3 +708,87 @@ function card(a) {
     //     setNum(prev=>prev+1)
     //   }}>Click</button>
     // </div>
+
+
+"-----------------------------------------------------------------------"
+
+"------------------- 11-form handling-------------------"
+// preventing default behaviuor of form submission
+
+// const App = () => {
+
+//   const submitHandler=(e)=>{
+//     e.preventDefault()
+//     console.log("Form Submitted");
+//   }
+
+//   return (
+//     <div>
+//       <form onSubmit={(e)=>{
+//         submitHandler(e)
+//       }}>
+//         <input type="text" placeholder='Enter your name' />
+//         <button>Submit</button>
+//       </form>
+//     </div>
+//   )
+// }
+
+
+"-------------------12-two way binding------------------"
+// const App = () => {
+
+//   const submitHandler=(e)=>{
+//     e.preventDefault()
+//     console.log("Form Submitted");
+//   }
+
+//   return (
+//     <div>
+//       <form onSubmit={(e)=>{
+//         submitHandler(e)
+//       }}>
+//         <input 
+//         type="text" 
+//         placeholder='Enter your name'
+//         onChange={(e)=>{
+//           console.log(e.target.value)
+
+//         }}
+//         />
+//         <button>Submit</button>
+//       </form>
+//     </div>
+//   )
+// }
+
+"------------------two way binding with useState------------------"
+// two way binding is a concept in React that allows for the synchronization of data between the user interface (UI) and the component's state. It enables changes made in the UI to be reflected in the component's state and vice versa, creating a seamless interaction between the two.
+// const App = () => {
+
+//   const [title, settitle] = useState('')
+
+  // const submitHandler=(e)=>{
+  //   e.preventDefault()
+  //   console.log("Form Submitted by", title);
+  // settitle('')
+  // }
+
+//   return (
+//     <div>
+//       <form onSubmit={(e)=>{
+//         submitHandler(e)
+//       }}>
+//         <input 
+//         type="text" 
+//         placeholder='Enter your name'
+//         value={title}
+//         onChange={(e)=>{
+//           settitle(e.target.value)
+//         }}
+//         />
+//         <button>Submit</button>
+//       </form>
+//     </div>
+//   )
+// }
