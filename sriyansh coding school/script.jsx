@@ -620,3 +620,91 @@ function card(a) {
   // )
 
 "--------------------------------------------------------------------------------------------"
+// const App = () => {
+//   const [num, setNum] = useState(0)
+//   return (
+//     <div>
+//       <h1>{num}</h1>
+//       <button onClick={()=>{
+//         setNum(20);
+//         console.log(num);
+//       }}>Click</button>
+//     </div>
+//   )
+
+// here in this example setNum(20); is called but console.log(num); is executed before the state update takes effect, so it logs the old value of num. To see the updated value, you can use a useEffect hook that listens for changes in num or log the value after the component re-renders.
+// also we can not use the same value a the rela value in setNum(num); because react js may not recognize it as a change so we have to use a different value like setNum(num+1); or setNum(20); etc
+
+
+"-------------------------- destructring ---------------------------------"
+// Destructuring = unpack values from arrays or objects in one line ⚡
+
+//( destructring means same to same copy paste ke liya but dono ab same reference nhi share krte)
+// Object -
+
+// const user = { name: "Shivi", age: 22 };
+// const { name, age } = user;
+
+
+// Array -
+
+// const nums = [10, 20];
+// const [a, b] = nums;
+
+
+// React useState -
+
+// const [count, setCount] = useState(0);
+
+
+"----"
+// const App = () => {
+//   const [num, setNum] = useState({user:"shivani", age:22})
+//   return (
+//     <div>
+//       <h1>{num.user}, {num.age}</h1>
+//       <button onClick={()=>{
+//         const newNum = {...num}
+//         newNum.user= 'Aman'
+//         newNum.age= 29
+//         setNum(newNum)
+            // or 
+//         setNum(prev=>({...prev,age:23}))  
+//       }}>Click</button>
+//     </div>
+//   )
+// }
+"---"
+// const [num, setNum] = useState([10, 20, 30])
+//   return (
+//     <div>
+//       <h1>{num}</h1>
+//       <button onClick={()=>{
+//        const newNum =[...num]
+//        newNum.push(39)
+//        setNum(newNum)
+//       }}>Click</button>
+//     </div>
+//   )
+
+"---------------------- batch updates in useState -------------------"
+// const [num, setNum] = useState(10)
+//   return (
+//     <div>
+//       <h1>{num}</h1>
+//       <button onClick={()=>{
+//         setNum(num+1)
+//         setNum(num+1)
+//         setNum(num+1)
+//       }}>Click</button>
+//     </div>
+
+"-------do this not like above---"  
+    // <div>
+    //   <h1>{num}</h1>
+    //   <button onClick={()=>{
+    //     setNum(prev=>prev+1)
+    //     setNum(prev=>prev+1)
+    //     setNum(prev=>prev+1)
+    //   }}>Click</button>
+    // </div>
