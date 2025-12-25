@@ -792,3 +792,11 @@ function card(a) {
 //     </div>
 //   )
 // }
+
+
+"------------------------------ 13- notes app----------------"
+// made this notes app using all the concept i have learned above
+
+
+"------------------------------ 14-localstorage ---------------"
+// localstorage is browsers memory not a volatile memeory it gets deletd once the page reloads
