@@ -102,7 +102,7 @@
 
 "Earlier, people used create-react-app (CRA) to make React projects. But the team behind it has officially stopped maintaining it, and they’ve suggested moving to frameworks like Next.js or Remix because React itself is only a library — it doesn’t include a full architecture or advanced tooling."
 
-"For learning React basics though, using Vite is perfectly fine. It’s fast, lightweight, and very beginner-friendly.---"
+"For learning React basics though, using Vite is perfectly fine. It's fast, lightweight, and very beginner-friendly.---"
 
 
 
@@ -197,16 +197,16 @@
 
 "-------------in jsx------------"
 "in cards.jsx"
-function card(a) {
-  return
-  <div className="card">
-    <img src="https://images.unsplash.com/photo-1639542270103-0e94fc28be38?q=80&w=816&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
-    <h1>Shivani Singh</h1>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-    <button>View Profile</button>
-  </div>
+// function card(a) {
+//   return
+//   <div className="card">
+//     <img src="https://images.unsplash.com/photo-1639542270103-0e94fc28be38?q=80&w=816&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+//     <h1>Shivani Singh</h1>
+//     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+//     <button>View Profile</button>
+//   </div>
 
-}
+// }
 
 "in app.jsx"
 // card() as card(a)
@@ -322,7 +322,7 @@ function card(a) {
 "--------------but this is preffered ->--"
 // return <div key={idx}>
 //           <Card brandLogo={elem.brandLogo} company={elem.company} datePosted={elem.datePosted} post={elem.post} tag1={elem.tag1} tag2={elem.tag2} pay={elem.pay} location={elem.location}/>
-   
+
 //         </div>
 
 "-------------------------------------------------------------------------------------------------------------"
@@ -483,42 +483,42 @@ function card(a) {
         className="m-10 border border-pink-900 px-15 py-10" 
         placeholder="Enter Name" 
       /> */}
-    "----------------when we move the mouse in the red box we get the x and y coordinates of the mouse pointer using elem.pageX and elem.pageY------------------"
-    //   <div onMouseMove={(elem)=>{
-    //     console.log(elem.pageX, elem.pageY);
-    //   }} className="h-40 w-80 bg-red-900"></div>
-    // </div>
+"----------------when we move the mouse in the red box we get the x and y coordinates of the mouse pointer using elem.pageX and elem.pageY------------------"
+//   <div onMouseMove={(elem)=>{
+//     console.log(elem.pageX, elem.pageY);
+//   }} className="h-40 w-80 bg-red-900"></div>
+// </div>
 
 
-    //  <div onWheel={(elem)=>{
-    //   if (elem >0){
-    //     console.log("page is scrolling at positive speed",elem.deltaY)
-    //   }
-    //   console.log("page is scrolling at minus speed",elem.deltaY)
-    // }}>
-    //   <div className="h-screen w-full bg-red-700"></div>
-    //   <div className="h-screen w-full bg-blue-500"></div>
-    //   <div className="h-screen w-full bg-orange-700"></div>
-    // </div>
+//  <div onWheel={(elem)=>{
+//   if (elem >0){
+//     console.log("page is scrolling at positive speed",elem.deltaY)
+//   }
+//   console.log("page is scrolling at minus speed",elem.deltaY)
+// }}>
+//   <div className="h-screen w-full bg-red-700"></div>
+//   <div className="h-screen w-full bg-blue-500"></div>
+//   <div className="h-screen w-full bg-orange-700"></div>
+// </div>
 
 
-    "----------------------------- Hokks in React js-------------------"
+"----------------------------- Hokks in React js-------------------"
 
-    " why we use hools -> because in react js we cant use state and other features in functional components so we use hooks to use those features in functional components"
-    "----hooks are special functions that let you 'hook into' React features like state and lifecycle methods from functional components.---"
+" why we use hools -> because in react js we cant use state and other features in functional components so we use hooks to use those features in functional components"
+"----hooks are special functions that let you 'hook into' React features like state and lifecycle methods from functional components.---"
 
 
-    "-----some hooks are-> useState,useEffect,useContext etc----"
+"-----some hooks are-> useState,useEffect,useContext etc----"
 
-    // 1. "------------------useState hook -> " manages/changes state"-------------------"
-    "useState-> is a hook that allows you to add state management to functional components in React. It enables you to create and update state variables, which can be used to store and manage data that affects the component's rendering and behavior."
-   // state1-> HOME and state2-> HOME with underline
-   "example of useState hook->"
-                          //  instagram-> someone mesg you on insta and then the stste chnages to show the mesg notification and also the count of message increases if the person sent you multiple message
+// 1. "------------------useState hook -> " manages/changes state"-------------------"
+"useState-> is a hook that allows you to add state management to functional components in React. It enables you to create and update state variables, which can be used to store and manage data that affects the component's rendering and behavior."
+// state1-> HOME and state2-> HOME with underline
+"example of useState hook->"
+//  instagram-> someone mesg you on insta and then the stste chnages to show the mesg notification and also the count of message increases if the person sent you multiple message
 
 // 2. "------------------useEffect hook -> performs side effects"-------------------"
-   "useEffect-> is a hook in React that allows you to perform side effects in functional components."
-  //  Side effects are operations that can affect other parts of the application or interact with external systems, such as fetching data from an API, updating the DOM, setting up subscriptions, or timers."
+"useEffect-> is a hook in React that allows you to perform side effects in functional components."
+//  Side effects are operations that can affect other parts of the application or interact with external systems, such as fetching data from an API, updating the DOM, setting up subscriptions, or timers."
 
 // 3. "-------------------useRef hook -> access/select any DOM elements-------------------------"
 // in js we use document.querySelector to select any DOM element but in react js we use useRef hook to select any DOM element because we cant use document.querySelector in react js
@@ -528,7 +528,7 @@ function card(a) {
 
 
 
-"----------------------------------------------------------------------------------------------------------" 
+"----------------------------------------------------------------------------------------------------------"
 
 // useState - state ko manage krne ke liye
 
@@ -563,7 +563,7 @@ function card(a) {
 
 "---------------------------------------------------"
 // const App = () => {
-  
+
 //   const [num, setNum] = useState('0');
 
 //   return (
@@ -581,7 +581,7 @@ function card(a) {
 
 "-------------------------------------------------------------------------------------------"
 // const App = () => {
-  
+
 //   const [num, setNum] = useState('0');
 //   const [userName, setUserName] = useState('Shivani');
 //   const [users, setusers] = useState(['Shivani', 'Sarthak', 'Ankita']);
@@ -602,22 +602,22 @@ function card(a) {
 //   )
 // }
 "-------------------------------------------------------------------------------------------"
-  // return (
-  //   <div>
-  //     <h1>{num}</h1>
-  //     <button onClick={()=>{
-  //       setNum(num+1);
-  //     }}>Increase</button>
-  //     <button onClick={()=>{
-  //       setNum(num-1);
+// return (
+//   <div>
+//     <h1>{num}</h1>
+//     <button onClick={()=>{
+//       setNum(num+1);
+//     }}>Increase</button>
+//     <button onClick={()=>{
+//       setNum(num-1);
 
-  //       // setNum(num--); // Wrong way to decrease the value
-  //     }}>Decrease</button>
-  //     <button onClick={()=>{
-  //       setNum(num+5);
-  //     }}>Jump by 5</button>
-  //   </div>
-  // )
+//       // setNum(num--); // Wrong way to decrease the value
+//     }}>Decrease</button>
+//     <button onClick={()=>{
+//       setNum(num+5);
+//     }}>Jump by 5</button>
+//   </div>
+// )
 
 "--------------------------------------------------------------------------------------------"
 // const App = () => {
@@ -668,7 +668,7 @@ function card(a) {
 //         newNum.user= 'Aman'
 //         newNum.age= 29
 //         setNum(newNum)
-            // or 
+// or 
 //         setNum(prev=>({...prev,age:23}))  
 //       }}>Click</button>
 //     </div>
@@ -699,15 +699,15 @@ function card(a) {
 //       }}>Click</button>
 //     </div>
 
-"-------do this not like above---"  
-    // <div>
-    //   <h1>{num}</h1>
-    //   <button onClick={()=>{
-    //     setNum(prev=>prev+1)
-    //     setNum(prev=>prev+1)
-    //     setNum(prev=>prev+1)
-    //   }}>Click</button>
-    // </div>
+"-------do this not like above---"
+// <div>
+//   <h1>{num}</h1>
+//   <button onClick={()=>{
+//     setNum(prev=>prev+1)
+//     setNum(prev=>prev+1)
+//     setNum(prev=>prev+1)
+//   }}>Click</button>
+// </div>
 
 
 "-----------------------------------------------------------------------"
@@ -768,11 +768,11 @@ function card(a) {
 
 //   const [title, settitle] = useState('')
 
-  // const submitHandler=(e)=>{
-  //   e.preventDefault()
-  //   console.log("Form Submitted by", title);
-  // settitle('')
-  // }
+// const submitHandler=(e)=>{
+//   e.preventDefault()
+//   console.log("Form Submitted by", title);
+// settitle('')
+// }
 
 //   return (
 //     <div>
@@ -799,4 +799,116 @@ function card(a) {
 
 
 "------------------------------ 14-localstorage ---------------"
-// localstorage is browsers memory not a volatile memeory it gets deletd once the page reloads
+// localstorage is browser's memory (small info.), it is going to be saved always(hmesa)
+// sessionStorage -> it remains untill the session( browser is open) going on
+
+// localStorage.clear();
+// sessionstorage.clear()
+
+// localStorage.setItem('user','sarthak') ->localstorage.setItem('key','value')
+// localStorage.getItem('user') ->localstorage.getitem('key')
+// localstorage.removeItem(user) 
+"--------------------------"
+"------ save/retrive array in localstorage----"
+
+// const user ={
+//   username:'Shivani',
+//   age:22,
+//   city:'Hapur'
+// }
+// localStorage.setItem('user',user)
+
+// output in localstorage ->user	[object Object] ->>>> it is beacuse when we store things in key value pair we have to make them in string form so we sill be using json.stringify method
+"--- use this instead -->      convert from object to string use JSON.stringify -----------"
+//  localStorage.setItem('user',JSON.stringify(user))
+
+
+// const user = localStorage.getItem('user')
+// console.log(typeof(user))
+// o/p->string
+
+"--- use this instead -->      convert from string to object use JSON.stringify -----------"
+// const user =  JSON.parse(localStorage.getItem('user'))
+// console.log(user)
+// o/p->{username: 'Shivani', age: 22, city: 'Hapur'}
+
+
+
+"-----------------------------------------------------------------------------------------"
+"--------------------------- 15-API Calling -----------------"
+"------ what is an api? -----"
+// An API call (or request) is a message sent from one software application (the client) to another system's API (server) to request data or trigger a specific action. This communication enables different software systems to interact and share functionality seamlessly over the internet. 
+
+// methods: 1.fetch(in-built api in js)
+//          2.axios(third-party api)
+
+
+// promise -> A JavaScript Promise is an object that represents a placeholder for a value that will be available in the future, used to manage asynchronous operations like fetching data from a server. 
+//  async function getData(){
+
+//   const response = await fetch('https://jsonplaceholder.typicode.com/todos/1')
+//   console.log(response)
+// }
+//  return (
+//   <div>
+//     <button onClick={getData}>Get Data</button>
+//   </div>
+// )
+"-------------or------------"
+// const App = () => {
+
+// const getData=async()=>{
+
+//   const response = await fetch('https://jsonplaceholder.typicode.com/todos/1')
+//   console.log(response)
+
+// or 
+
+// const data = await(response.json())
+// console.log(data)
+
+// }
+
+// return (
+//   <div>
+//     <button onClick={getData}>Get Data</button>
+//   </div>
+// )
+
+
+"----- Axios------"
+//   const getData=async()=>{
+
+//   const response = await axios.get('https://jsonplaceholder.typicode.com/users')
+//   // or
+//   const {data} = await axios.get('https://jsonplaceholder.typicode.com/users')
+//   console.log(data)
+// }
+"------------- how we call data through api-------------"
+// import axios from 'axios'
+// import { useState } from 'react'
+
+// const App = () => {
+
+//   const [data, setData] = useState([])
+
+//   const getData=async()=>{
+//     const response = await axios.get('https://picsum.photos/v2/list')
+//     setData(response.data)
+
+
+//   }
+
+//   return (
+//     <div>
+//       <button onClick={getData}>Get Data</button>
+//       <div>
+//         {data.map(function(elem, idx){
+//           return <h3>Hello,{elem.author}{idx}</h3>
+//         })}
+//       </div>
+//     </div>
+//   )
+// }
+
+// export default App
